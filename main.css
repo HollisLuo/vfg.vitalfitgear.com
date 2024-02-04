@@ -1,0 +1,63 @@
+body{
+    overflow-y: scroll;
+    font-family: arial;
+}
+.title
+{
+    background-image: linear-gradient(#CCC, #EEE);
+    text-align: center;
+    font-family: Arial;
+    border: 0.1px ridge #FFF;
+    text-align: center;
+    border: 3px solid #f40;
+    color: #F40;
+}
+ul.navbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #FAFAFA;
+    font-family: comic sans ms;
+}
+ul.navbar li{
+    float: left;
+    width: 25%;
+}
+ul.navbar li a{
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: .5rem .6rem;
+    text-decoration: none;
+    width:100%;
+}
+ul.navbar li a:hover:not(.active)
+{
+    background: #E2E2E2;
+}
+ul.navbar li a.active
+{
+    background: #f40;
+    color: #FFF;
+}
+ul.navbar li a.active:hover
+{
+    background: #f60;
+    color: #FFF;
+}
+#main
+{
+    padding: 0 .6rem;
+}
+@media (max-width: 660px)
+{
+    ul.navbar li.right, ul.navbar li
+    {
+        width: 100%;
+    }
+    ul.navbar li{
+        float: left;
+        width: 100%;
+    }
+}
